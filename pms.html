@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Patient Management System - Login</title>
+  <link rel="stylesheet" href="pms.css"> <!-- Updated to pms.css -->
+</head>
+<body>
+
+<div id="loginPage">
+  <h1>Enter Password to View PMS</h1>
+  <input type="password" id="passwordInput" placeholder="Enter Password">
+  <br>
+  <button onclick="checkPassword()">Login</button>
+  <p id="errorMsg" style="color: red; margin-top: 10px;"></p>
+</div>
+<div style="text-align: center; margin-top: 30px;">
+  <!-- Message line below password input -->
+  <p style="font-size: 24px; font-weight: bold; color: #131f53e2; letter-spacing: 2px; text-transform: uppercase;">
+   Dr. Sumukh's Patient Management System
+    <img src="https://media.istockphoto.com/id/655840058/vector/vector-tooth-icon-oral-medicine-stomatology-dental-medicine-concepts-white-tooth-modern-flat.jpg?s=1024x1024&w=is&k=20&c=ghPGF0Q3SCbrCMz4WBb7Fbj_j52lWCKo3E9iqPH0-20=" alt="Tooth Image" "Tooth Image" style="margin-top: 20px; width: 100px; height: auto; display: block; margin-left: auto; margin-right: auto;">
+  </p>
+</div>
+
+<div id="pmsPage">
+  <h1>Patient Management System</h1>
+  <div class="filter-container">
+    <input type="date" id="filterDate">
+    <button onclick="filterByDate()">Filter</button>
+    <button onclick="resetTable()">Reset</button>
+  </div>
+  
+  <table id="patientTable">
+    <thead>
+      <tr>
+        <th>Timestamp</th>
+        <th>Patient Name</th>
+        <th>Appointment Date</th>
+        <th>Appointment Time</th>
+        <th>Mobile Number</th>
+        <th>Email Address</th>
+        <th>Patient's Age</th>
+        <th>Pre-History of Diseases</th>
+        <th>Type Of Service</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Data will come here -->
+    </tbody>
+  </table>
+</div>
+
+<script src="pms.js"></script> <!-- Updated to pms.js -->
+</body>
+</html>

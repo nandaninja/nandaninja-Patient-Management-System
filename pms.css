@@ -1,0 +1,182 @@
+/* General Body Style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fc; /* Light neutral background color for a soft feel */
+    margin: 0;
+    padding: 0;
+}
+
+/* Login Page Style */
+#loginPage {
+    display: block;
+    background: linear-gradient(145deg, #8c9eff, #a0b1e5); /* Soft pastel blue gradient */
+    padding: 50px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* PMS Page Style */
+#pmsPage {
+    display: none;
+    background: linear-gradient(145deg, #bbc5d2, #c6d0db); /* Subtle cool-tone gradient */
+    padding: 50px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Fields */
+input[type="password"], input[type="date"] {
+    padding: 15px;
+    margin: 15px 0;
+    width: 270px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid #6c757d; /* Soft gray border */
+    background-color: #ffffff; /* White background for input fields */
+    transition: border-color 0.3s ease;
+}
+
+/* Input Field Focus Effect */
+input[type="password"]:focus, input[type="date"]:focus {
+    border-color: #495057; /* Slightly darker gray when focused */
+    outline: none;
+}
+
+/* Buttons */
+button {
+    padding: 14px 28px;
+    font-size: 18px;
+    cursor: pointer;
+    background: linear-gradient(145deg, #58a6b5, #5b8c92); /* Soft teal gradient */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.2s ease-in-out;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background: linear-gradient(145deg, #4a8a96, #3c6f73); /* Darker teal on hover */
+    transform: translateY(-3px);
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    margin-top: 30px;
+    background-color: #ffffff; /* Crisp white background for the table */
+    border-collapse: collapse;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 14px;
+    border: 1px solid #d1d9e6; /* Soft light gray border */
+    text-align: center;
+}
+
+/* Header Styling */
+th {
+    background-color: #6f7c89; /* Muted gray-blue header */
+    color: white;
+    font-weight: bold;
+}
+
+/* Even Row Background Color */
+tr:nth-child(even) {
+    background-color: #dbe1ee; /* Light gray-blue background for even rows */
+}
+
+/* Row Hover Effect */
+tr:hover {
+    background-color: #e9edf7; /* Lighter gray-blue for hover effect */
+}
+
+/* Filter Container */
+.filter-container {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-container input[type="date"] {
+    padding: 12px;
+    font-size: 16px;
+    width: 200px;
+    border-radius: 8px;
+    border: 2px solid #6c757d;
+    margin-right: 15px;
+}
+
+.filter-container button {
+    padding: 12px 25px;
+    font-size: 16px;
+    background: linear-gradient(145deg, #58a6b5, #5b8c92);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.filter-container button:hover {
+    background: linear-gradient(145deg, #4a8a96, #3c6f73);
+    transform: translateY(-2px);
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    #loginPage, #pmsPage {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    input[type="password"], input[type="date"] {
+        width: 100%; 
+        padding: 15px;
+        font-size: 16px;
+        margin: 12px 0;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    table {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    th, td {
+        padding: 12px;
+    }
+
+    td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: inline-block;
+        width: 120px;
+    }
+
+    .filter-container {
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .filter-container input[type="date"], .filter-container button {
+        width: 90%;
+        margin: 10px 0;
+    }
+}
