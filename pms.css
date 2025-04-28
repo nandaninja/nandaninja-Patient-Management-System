@@ -103,7 +103,7 @@ tr:hover {
     justify-content: center;
     align-items: center;
    flex-wrap: wrap; 
-    gap: 10px; 
+    gap: 50px; 
 }
 
 .filter-container input[type="date"] {
