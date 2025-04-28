@@ -124,6 +124,11 @@ tr:hover {
     transition: background 0.3s ease, transform 0.2s ease-in-out;
 }
 
+/* Adding space between buttons - CHANGE */
+.filter-container button + button {
+    margin-left: 15px; /* Space between Filter and Reset button */
+}
+
 .filter-container button:hover {
     background: linear-gradient(145deg, #4a8a96, #3c6f73);
     transform: translateY(-2px);
