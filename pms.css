@@ -1,7 +1,7 @@
 /* General Body Style */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f7f9fc; /* Light neutral background color for a soft feel */
+    background-color: #94a4a8; /* Light neutral background color for a soft feel */
     margin: 0;
     padding: 0;
 }
@@ -9,11 +9,28 @@ body {
 /* Login Page Style */
 #loginPage {
     display: block;
-    background: linear-gradient(145deg, #8c9eff, #a0b1e5); /* Soft pastel blue gradient */
-    padding: 50px;
+    background: linear-gradient(145deg, #626262, #7888b8); /* Soft pastel blue gradient */
+    padding: 30px 300px;
     text-align: center;
     border-radius: 15px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    max-width: 270px;
+    margin: 50px auto;
+}
+
+/* Login Section - Compact Password Box */
+#loginSection {
+    background-color: #9b4dca; /* Bluish-violet color */
+    padding: 30px;
+    color: white;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+#loginSection h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
 /* PMS Page Style */
@@ -24,32 +41,38 @@ body {
     text-align: center;
     border-radius: 15px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: auto;
+    min-height: 100vh; /* Makes sure it expands downward */
+    box-sizing: border-box;
+    overflow: auto;
+    overflow-x: auto; /* Enables horizontal scroll on zoom */
+    overflow-y: auto; /* Enables vertical scroll if content grows */
 }
 
 /* Input Fields */
 input[type="password"], input[type="date"] {
     padding: 15px;
     margin: 15px 0;
-    width: 270px;
+    width: 280px;
     font-size: 16px;
     border-radius: 10px;
-    border: 2px solid #6c757d; /* Soft gray border */
-    background-color: #ffffff; /* White background for input fields */
+    border: 2px solid #6c757d;
+    background-color: #ffffff;
     transition: border-color 0.3s ease;
 }
 
-/* Input Field Focus Effect */
 input[type="password"]:focus, input[type="date"]:focus {
-    border-color: #495057; /* Slightly darker gray when focused */
+    border-color: #495057;
     outline: none;
 }
 
 /* Buttons */
 button {
-    padding: 14px 28px;
-    font-size: 18px;
+    padding: 12px 25px;
+    font-size: 16px;
     cursor: pointer;
-    background: linear-gradient(145deg, #58a6b5, #5b8c92); /* Soft teal gradient */
+    background: linear-gradient(145deg, #58a6b5, #5b8c92);
     color: white;
     border: none;
     border-radius: 10px;
@@ -57,9 +80,8 @@ button {
     transition: background 0.3s ease, transform 0.2s ease-in-out;
 }
 
-/* Button Hover Effect */
 button:hover {
-    background: linear-gradient(145deg, #4a8a96, #3c6f73); /* Darker teal on hover */
+    background: linear-gradient(145deg, #4a8a96, #3c6f73);
     transform: translateY(-3px);
 }
 
@@ -67,7 +89,7 @@ button:hover {
 table {
     width: 100%;
     margin-top: 30px;
-    background-color: #ffffff; /* Crisp white background for the table */
+    background-color: #ffffff;
     border-collapse: collapse;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -75,25 +97,22 @@ table {
 
 th, td {
     padding: 14px;
-    border: 1px solid #d1d9e6; /* Soft light gray border */
+    border: 1px solid #d1d9e6;
     text-align: center;
 }
 
-/* Header Styling */
 th {
-    background-color: #6f7c89; /* Muted gray-blue header */
+    background-color: #6f7c89;
     color: white;
     font-weight: bold;
 }
 
-/* Even Row Background Color */
 tr:nth-child(even) {
-    background-color: #dbe1ee; /* Light gray-blue background for even rows */
+    background-color: #dbe1ee;
 }
 
-/* Row Hover Effect */
 tr:hover {
-    background-color: #e9edf7; /* Lighter gray-blue for hover effect */
+    background-color: #e9edf7;
 }
 
 /* Filter Container */
@@ -138,11 +157,16 @@ tr:hover {
     #loginPage, #pmsPage {
         padding: 20px;
         margin: 10px;
+        max-width: 100%;
+    }
+
+    #loginSection {
+        padding: 20px;
     }
 
     input[type="password"], input[type="date"] {
-        width: 100%; 
-        padding: 15px;
+        width: 100%;
+        padding: 10px;
         font-size: 16px;
         margin: 12px 0;
     }
@@ -162,20 +186,14 @@ tr:hover {
         padding: 12px;
     }
 
-    td::before {
-        content: attr(data-label);
-        font-weight: bold;
-        display: inline-block;
-        width: 120px;
-    }
-
     .filter-container {
         display: block;
         text-align: center;
         margin-bottom: 20px;
     }
 
-    .filter-container input[type="date"], .filter-container button {
+    .filter-container input[type="date"],
+    .filter-container button {
         width: 90%;
         margin: 10px 0;
     }
