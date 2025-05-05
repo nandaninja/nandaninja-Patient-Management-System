@@ -10,11 +10,11 @@ body {
 #loginPage {
     display: block;
     background: linear-gradient(145deg, #626262, #7888b8); /* Soft pastel blue gradient */
-    padding: 30px 300px;
+    padding: 30px;
     text-align: center;
     border-radius: 15px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    max-width: 270px;
+    max-width: 700px;
     margin: 50px auto;
 }
 
@@ -43,15 +43,23 @@ body {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
     width: 100%;
     height: auto;
-    min-height: 100vh; /* Makes sure it expands downward */
+    min-height: 100vh;
     box-sizing: border-box;
     overflow: auto;
-    overflow-x: auto; /* Enables horizontal scroll on zoom */
-    overflow-y: auto; /* Enables vertical scroll if content grows */
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+/* PMS Page Heading Center */
+#pmsPage h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
 }
 
 /* Input Fields */
-input[type="password"], input[type="date"] {
+input[type="password"],
+input[type="date"] {
     padding: 15px;
     margin: 15px 0;
     width: 280px;
@@ -62,7 +70,8 @@ input[type="password"], input[type="date"] {
     transition: border-color 0.3s ease;
 }
 
-input[type="password"]:focus, input[type="date"]:focus {
+input[type="password"]:focus,
+input[type="date"]:focus {
     border-color: #495057;
     outline: none;
 }
@@ -123,6 +132,7 @@ tr:hover {
     align-items: center;
 }
 
+/* Filter Input */
 .filter-container input[type="date"] {
     padding: 12px;
     font-size: 16px;
@@ -132,6 +142,7 @@ tr:hover {
     margin-right: 15px;
 }
 
+/* Filter Buttons */
 .filter-container button {
     padding: 12px 25px;
     font-size: 16px;
@@ -146,6 +157,11 @@ tr:hover {
 .filter-container button:hover {
     background: linear-gradient(145deg, #4a8a96, #3c6f73);
     transform: translateY(-2px);
+}
+
+/* Add spacing between filter buttons on desktop */
+.filter-container button:not(:last-child) {
+    margin-right: 15px;
 }
 
 /* Mobile Responsive Styles */
@@ -164,7 +180,8 @@ tr:hover {
         padding: 20px;
     }
 
-    input[type="password"], input[type="date"] {
+    input[type="password"],
+    input[type="date"] {
         width: 100%;
         padding: 10px;
         font-size: 16px;
