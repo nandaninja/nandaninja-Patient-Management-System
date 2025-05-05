@@ -28,9 +28,9 @@ body {
 
 /* Input Fields */
 input[type="password"], input[type="date"] {
-    padding: 12px 20px;
-    margin: 12px 0;
-    width: 240px;
+    padding: 15px;
+    margin: 15px;
+    width: 270px;
     font-size: 16px;
     border-radius: 10px;
     border: 2px solid #6c757d; /* Soft gray border */
