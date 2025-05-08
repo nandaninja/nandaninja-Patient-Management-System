@@ -18,9 +18,11 @@ This project is a two-part web solution designed for a dental Endodontic practic
 * PMS Admin System:
   [https://github.com/nandaninja/nandaninja-Patient-Management-System](https://github.com/nandaninja/nandaninja-Patient-Management-System)
 
+Access password: **admin123**
+
 * Resume + Project Portfolio Website:
   [https://github.com/nandaninja/resume-website](https://github.com/nandaninja/resume-website)
-  (Links to these projects are included in the Projects section under "Read More" in the respective project boxes)
+  (Links to these projects are included in the Projects section under "View Project" in the respective project boxes)
 
 ---
 
